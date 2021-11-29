@@ -1,10 +1,10 @@
 {
   "name": "restapi",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "keywords": [],
   "author": "",
@@ -12,5 +12,15 @@
   "dependencies": {
     "express": "^4.17.1",
     "pg": "^8.7.1"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saein64/crudapp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/saein64/crudapp/issues"
+  },
+  "homepage": "https://github.com/saein64/crudapp#readme",
+  "description": ""
 }
