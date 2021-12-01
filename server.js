@@ -1,8 +1,9 @@
+const { json } = require('express');
 const experss = require('express')
 const studentroute = require('./src/students/routes');
 const app = experss();
 const port = 3000;
-
+app.use(experss.json());
 app.get("/",(req,res) => {
     res.send('hello world!');
 });
