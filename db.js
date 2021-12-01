@@ -11,4 +11,3 @@ port: 5432,
 );
 
 module.exports = pool;
- 
