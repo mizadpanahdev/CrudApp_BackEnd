@@ -9,9 +9,10 @@ const getStudents = (req,res)=> {
 }
 const checkStudentByEmail =(req,res)=>{
     const {id,first_name,last_name,email,gender,date_of_birth,country_of_birth}= req.body;
+    //check the email is exist?
     pool.query(queris.checkStudentByEmail,[email],(error,result)=>{
         if (result.rows.length){
-            res.send('the email is exist');
+            res.send("the email is exist");
         } 
     })
 
