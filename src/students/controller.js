@@ -9,14 +9,14 @@ const getStudents = (req,res)=> {
     })
 }
 const addStudent =(req,res)=>{
-    const {first_name,last_name,email,gender,date_of_birth,country_of_birth}= req.body;
+    const {first_name,last_name,email,gender,date_of_birth,coutry_of_birth}= req.body;
     //check the email is exist
     pool.query(queris.checkStudentByEmail,[email],(error,result)=>{
         if (result.rows.length){
             res.send("the email is exist");
         } 
     // add student if the emial does'nt exist in db
-    pool.query(queris.addStudentToDb,[first_name,last_name,email,gender,date_of_birth,country_of_birth],(error,result)=>{
+    pool.query(queris.addStudentToDb,[first_name,last_name,email,gender,date_of_birth,coutry_of_birth],(error,result)=>{
         if (error) throw error;
         res.status('201').send("the student created successsfully!");
     })
