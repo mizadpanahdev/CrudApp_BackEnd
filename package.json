@@ -11,6 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
+    "expres": "^0.0.5",
     "express": "^4.17.1",
     "g": "^2.0.1",
     "pg": "^8.7.1"
@@ -23,5 +24,8 @@
     "url": "https://github.com/saein64/crudapp/issues"
   },
   "homepage": "https://github.com/saein64/crudapp#readme",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
 }
