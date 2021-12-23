@@ -50,12 +50,28 @@ const removestudent = (req,res)=>{
 };
 // implement put method with checking id student:
 
+const updatestudent =(req,res)=>{
+    const id= parseInt(req.params.id);
+    const {first_name}=req.body;
+    pool.query(queris.getStudentsById,[id],(error,result)=>{
+        const nostudent= ! result.rows.length
+    if (nostudent){
+        res.send("the student doesn't exist in db!")
+    }else
+    {
+        pool.query(queris.updatestudent,[first_name,id],(error,result)=>{
+            res.status(200).send("the student update successfully")
+        })
+    }
+    })
 
+};
 
 
 module.exports = {
   getStudents,
   getStudentById,  
   addStudent,
-  removestudent
+  removestudent,
+  updatestudent
 };
