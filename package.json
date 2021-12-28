@@ -1,32 +1,32 @@
 {
-  "name": "restapi",
+  "name": "crudapp_nodejs_postgres",
   "version": "1.0.0",
+  "description": "",
   "main": "server.js",
-  "style":"module",
+  "type": "module",
   "scripts": {
-    "dev": "nodemon . ",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon .",
     "start": "node ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saein64/CrudApp_nodeJS_Postgres.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "cors": "^2.8.5",
-    "expres": "^0.0.5",
-    "express": "^4.17.2",
-    "g": "^2.0.1",
-    "pg": "^8.7.1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/saein64/crudapp.git"
-  },
   "bugs": {
-    "url": "https://github.com/saein64/crudapp/issues"
+    "url": "https://github.com/saein64/CrudApp_nodeJS_Postgres/issues"
   },
-  "homepage": "https://github.com/saein64/crudapp#readme",
-  "description": "",
-  "devDependencies": {
-    "nodemon": "^2.0.15"
+  "homepage": "https://github.com/saein64/CrudApp_nodeJS_Postgres#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.2",
+    "jsonwebtoken": "^8.5.1",
+    "pg": "^8.7.1"
   }
 }
