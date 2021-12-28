@@ -1,7 +1,7 @@
 import express from 'express';
 const query = express.query();
 import pool from '../config/db.config.js';
-import queries from "./queries";
+import queries from "./queries.js";
 //get method: retrieve all record in person table!
 const getStudents = (req,res)=> {
     pool.query(queries.getStudents, (error,result)=>{
