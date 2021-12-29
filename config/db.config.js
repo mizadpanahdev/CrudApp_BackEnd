@@ -6,7 +6,11 @@ let localPoolConfig={
     password: '8411311008',
     host: 'localhost',
     port: '5432',
-    database:'hamraz'
+    database:'hamraz',
+    max: 5,
+    min: 0,
+    acquire: 30000,
+    idle: 10000
 };
 // dev env config for connecting db:
 // const poolconfig= env.DATABASE_URL ? {

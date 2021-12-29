@@ -7,6 +7,7 @@ import {dirname,join} from "path";
 import { fileURLToPath } from "url";
 import  userRouter from "./routes/user.routes.js";
 import studentroute from "./routes/student.routes.js";
+import authroute from "./routes/auth.routes.js";
 dotenv.config();
 const __dirname= dirname(fileURLToPath(import.meta.url));
 const app=express();
@@ -21,3 +22,4 @@ app.listen(port,()=>{
 })
 app.use('/api/users',userRouter);
 app.use('/api/v1/student',studentroute);
+app.use('/api/auth',authroute);
