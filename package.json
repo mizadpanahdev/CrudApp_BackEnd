@@ -2,7 +2,7 @@
   "name": "restapi",
   "version": "1.0.0",
   "main": "server.js",
-  "style":"module",
+  "style": "module",
   "scripts": {
     "dev": "nodemon . ",
     "start": "node ."
@@ -11,10 +11,14 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "bcrypt": "^5.0.1",
+    "cookie-parser": "^1.4.6",
     "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
     "expres": "^0.0.5",
     "express": "^4.17.2",
     "g": "^2.0.1",
+    "jsonwebtoken": "^8.5.1",
     "pg": "^8.7.1"
   },
   "repository": {
